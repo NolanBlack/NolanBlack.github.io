@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #a2a2a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 18pt;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #008080;
 		text-decoration: none;
 	}
 
@@ -2049,7 +2049,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png"); */
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2073,7 +2073,7 @@ input, select, textarea {
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				content: 'More';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2100,7 +2100,6 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 0.35em;
-			display: block;
 		}
 
 		.image.left {
@@ -2112,11 +2111,11 @@ input, select, textarea {
 		.image.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
-			top: 0.25em;
+			top: -3.25em;
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 35%;
 		}
 
 			.image.left img, .image.right img {
@@ -2125,8 +2124,9 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 			width: 100%;
+			height: 70%;
 		}
 
 			.image.fit img {
