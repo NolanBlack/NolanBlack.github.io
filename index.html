@@ -17,8 +17,9 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>Nolan Black, Ph.D.</strong><br /> 
-					Simulation Engineer |<br />
+					<h1><strong>Nolan Black, Ph.D.</strong>
+                    <br />
+					Simulation Engineer |
                     </h1>
                     <h5>
                         Design Optimization<br />
@@ -40,85 +41,99 @@
                             </h2>
 						</header>
                         <p>
-                        <strong>I'm an engineer based in Colorado</strong> who likes to think about engineering design and the models
-                        we use to measure success. 
+                        <strong>I'm an engineer based in Philadelphia</strong> who likes to think about engineering design and the models
+                        we use to measure success.
                         I currently work on simulation,
-                        modeling, and surrogate development at 
+                        modeling, and surrogate development at
                         <a target="_blank" rel="noopener noreferrer"
                         href="https://pasteurlabs.ai">
 					    Pasteur Labs</i></a>
                         .
                         My work has focused on
                         multiscale structural models, ML surrogate training,
-                        and structural optimization techniques with 
+                        and structural optimization techniques with
                         <a target="_blank" rel="noopener noreferrer"
                         href="https://github.com/NolanBlack">
 					    a mix of C++ and Python development</i></a>
                         .
                         <br />
                         <br />
-                        Check out some of my favorite projects, download 
+                        Check out some of my favorite projects, download
                         my resume/cv, and say hi on LinkedIn!
                         </p>
 						<ul class="actions">
                             <li><a href="files/nolanblack_resume.pdf" class="button small icon solid fa-download" download>Resume</a></li>
                             <li><a href="files/nolanblack_cv.pdf" class="button small icon solid fa-download" download>Academic CV</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/NolanBlack" class="button small icon brands fa-github">GitHub</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nolanjblack/" class="button small icon brands fa-linkedin">LinkedIn</a></li>
 						</ul>
 					</section>
 
 				<!-- Two -->
 					<section id="two">
+                        <h1>
+                            Research & Projects
+                        </h1>
 						<div class="row">
-                            <h3>Second-order Homogenization <br /> & Design Optimization</h3>
+                            <h3>Optimization of Multiscale Structures</h3>
 								<p>
 								<a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1007/s00158-024-03821-y" class="image right"><img src="images/projects/lbracket.gif" alt="" /></a>
                                 Second-order mechanical models incorporate length
-                                scale effects in a microstructural material model. 
+                                scale effects in a microstructural material model.
                                 <a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1007/s00158-024-03821-y">
                                 In this paper</a>
                                 , second-order homogenization models were developed
                                 for stress-constrained structural optimization.
+                                Second-order models relax the assumption of scale
+                                separation that restricts first-order models
+                                to infinitesimal microstructures, allowing for
+                                the analysis and optimization of structures
+                                with observable hierarchy.
                                 </p>
-                                <h3>Finite Element Analysis <br /> & Design Optimization</h3>
+                            <h3>Finite Element Analysis & Design Optimization</h3>
 								<p>
 								<a target="_blank" rel="noopener noreferrer"
                                 href="https://research.coe.drexel.edu/mem/mcmb/" class="image right"><img src="images/projects/biotruss_designs.png" alt="" /></a>
                                 My work in Drexel's MCMB Lab involved the development of
                                 high performance C++ (built around the PETSc library)
-                                for nonlinear, multiscale finite element analysis. 
+                                for nonlinear, multiscale finite element analysis.
                                 The code is closed-source, but you can follow
-                                its influence on the 
+                                its influence on the
                                 <a target="_blank" rel="noopener noreferrer"
                                 href="https://research.coe.drexel.edu/mem/mcmb/">
-                                MCMB Lab Website</a>
-                                .
+                                MCMB Lab Website</a>.
                                 </p>
                             <h3>ML in Microstructural Design Optimization</h3>
                                 <p>
                                 <a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1007/s00158-022-03471-y" class="image right"><img src="images/projects/shear_modulus.gif" alt="" /></a>
-                                Tailored microstructures can boast superior performance 
-                                over their homogeneous constituents, but design of 
+                                Tailored microstructures can boast superior performance
+                                over their homogeneous constituents, but design of
                                 structures <strong>and</strong> their constituents
-                                is prohibitively costly. 
+                                is prohibitively costly.
                                 <a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1007/s00158-022-03471-y">
                                 In this paper</a>
                                 , neural network surrogate models are developed for
                                 gradient based optimization of homogenized microstructures.
+                                The NN surrogates gave a 1000x speedup of the homogenization
+                                process, optimizing structures of graded lattices.
                                 </p>
 							<h3>Multifidelity Graph Neural Networks</h3>
 								<p>
 								<a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1016/j.cma.2022.115120" class="image right"><img src="images/projects/mfgnn.png" alt="" /></a>
                                 Multifidelity Graph Neural Networks were designed to
-                                operate of subraphs of discrete simulations. 
+                                operate of subraphs of discrete simulations.
                                 <a target="_blank" rel="noopener noreferrer"
                                 href="https://doi.org/10.1016/j.cma.2022.115120">
                                     In this paper</i></a>, we trained several MFGNN architectures to emulate
                                 the convergence behavior of finite element models.
+                                Operating over subgraphs helped generalization outside
+                                of the models' training domain in an effort to
+                                build more powerful surrogate models.
                                 </p>
 							<h3>NixOS for Busy People</h3>
 								<p>
@@ -130,6 +145,8 @@
                                 my NixOS config</a>
                                 for a pain-free, worry-free,
                                 clutter-free Linux configuration.
+                                It includes my Hyprland, neovim, and tmux
+                                configurations that suit my development.
 							    </p>
 						</div>
 						<ul class="actions">
@@ -159,6 +176,8 @@
                             </blockquote>
 						</section>
 
+			</div>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -174,7 +193,7 @@
                         <li><a target="_blank" rel="noopener noreferrer"
                                 href="https://orcid.org/0000-0001-5799-9917"
                                 class="icon brands fa-orcid"><span
-                        class="label">Google Scholar</span></a></li>
+                        class="label">ORCID</span></a></li>
 					</ul>
 					<ul class="icons">
                         <li><a target="_blank" rel="noopener noreferrer"
